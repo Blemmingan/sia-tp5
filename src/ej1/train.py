@@ -8,10 +8,10 @@ and saves the best model.
 import numpy as np
 import csv
 import os
-from src.config import *
-from src.font_loader import load_font
-from src.autoencoder import Autoencoder
-from src.optimizers import get_optimizer
+from src.ej1.config import *
+from src.ej1.font_loader import load_font
+from src.ej1.autoencoder import Autoencoder
+from src.ej1.optimizers import get_optimizer
 
 def train():
     print("Loading data...")

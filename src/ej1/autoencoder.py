@@ -5,7 +5,7 @@ Implements a basic Autoencoder from scratch using NumPy.
 Handles forward propagation, backpropagation (chain rule), and loss calculations.
 """
 import numpy as np
-from src.activations import get_activation
+from src.ej1.activations import get_activation
 
 class Autoencoder:
     def __init__(self, encoder_layers, decoder_layers, hidden_act="tanh", out_act="sigmoid"):

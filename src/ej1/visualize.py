@@ -11,9 +11,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 import os
-from src.config import *
-from src.font_loader import load_font
-from src.autoencoder import Autoencoder
+from src.ej1.config import *
+from src.ej1.font_loader import load_font
+from src.ej1.autoencoder import Autoencoder
 
 def load_trained_model():
     '''

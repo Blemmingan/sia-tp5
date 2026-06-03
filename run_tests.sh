@@ -25,22 +25,22 @@ case $command in
     train)
         echo "Training autoencoder..."
         export PYTHONPATH=.
-        python3 src/train.py
+        python3 src/ej1/train.py
         ;;
     visualize)
         echo "Generating visualizations..."
         export PYTHONPATH=.
-        python3 src/visualize.py
+        python3 src/ej1/visualize.py
         ;;
     test)
         echo "Running pixel error test..."
         export PYTHONPATH=.
-        python3 src/visualize.py --test
+        python3 src/ej1/visualize.py --test
         ;;
     preview)
         echo "Previewing font characters..."
         export PYTHONPATH=.
-        python3 src/font_loader.py
+        python3 src/ej1/font_loader.py
         ;;
     sweep)
         echo "Sweeping is a manual process right now, but you can edit src/config.py to test different lr and epochs."
@@ -54,13 +54,13 @@ case $command in
     all)
         echo "[1/3] Training autoencoder..."
         export PYTHONPATH=.
-        python3 src/train.py
+        python3 src/ej1/train.py
         echo ""
         echo "[2/3] Generating visualizations..."
-        python3 src/visualize.py
+        python3 src/ej1/visualize.py
         echo ""
         echo "[3/3] Pixel error test..."
-        python3 src/visualize.py --test
+        python3 src/ej1/visualize.py --test
         ;;
     *)
         echo "Usage: ./run_tests.sh [train|visualize|test|preview|sweep|clean|all]"
