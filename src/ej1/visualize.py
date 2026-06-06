@@ -129,8 +129,11 @@ def plot_latent_space():
     plt.ylabel("Latent Variable 2")
     plt.grid(True, linestyle='--', alpha=0.6)
     
+    os.makedirs("outputs", exist_ok=True)
     plt.savefig("outputs/latent_space.png")
+    np.save("outputs/latent_coords.npy", latent)
     print("Saved: outputs/latent_space.png")
+    print("Saved: outputs/latent_coords.npy")
     plt.close()
 
 def generate_new_character():

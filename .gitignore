@@ -11,3 +11,8 @@ build/
 *.npz
 *.csv
 !outputs/.gitkeep
+bin/
+lib/
+include/
+pyvenv.cfg
+results_comparative/
