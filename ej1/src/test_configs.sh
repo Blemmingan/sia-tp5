@@ -2,8 +2,8 @@
 # test_configs.sh
 # Tests multiple autoencoder configurations and saves comparative outputs.
 
-# Go to the project root directory
-cd "$(dirname "$0")/../../"
+# Go to the ej1 directory
+cd "$(dirname "$0")/../"
 
 VENV_DIR=".venv"
 
@@ -50,10 +50,10 @@ for config in "${configs[@]}"; do
     echo "=========================================================="
     
     # Train
-    python3 src/ej1/train.py --lr "$lr" --optimizer "$opt" --hidden_act "$act" --encoder "$enc" --decoder "$dec"
+    python3 src/train.py --lr "$lr" --optimizer "$opt" --hidden_act "$act" --encoder "$enc" --decoder "$dec"
     
     # Visualize (generates graphs and new characters)
-    python3 src/ej1/visualize.py --lr "$lr" --optimizer "$opt" --hidden_act "$act" --encoder "$enc" --decoder "$dec"
+    python3 src/visualize.py --lr "$lr" --optimizer "$opt" --hidden_act "$act" --encoder "$enc" --decoder "$dec"
     
     # Create directory for the current configuration
     mkdir -p "results_comparative/$name"
@@ -69,7 +69,7 @@ done
 
 echo "=========================================================="
 echo "Generating final comparative graph of all latent spaces..."
-python3 src/ej1/compare_latent.py
+python3 src/compare_latent.py
 
 echo "=========================================================="
 echo "All tests completed!"

@@ -63,3 +63,13 @@ After running the visualizer, plots will be saved in `outputs/`:
 - `outputs/latent_space.png`: Scatter plot of the 32 characters in the 2D latent space.
 - `outputs/reconstructions.png`: Grid showing original vs reconstructed characters.
 - `outputs/new_character.png`: A decoded novel pattern from an untrained point in the latent space.
+
+## Exercise 1b — Denoising Autoencoder
+
+Located in `ej1b/`. Extends the basic autoencoder with denoising capability.
+
+- **Architecture:** Wider bottleneck (8D latent) vs ej1a's 2D — see `ej1b/README.md` for rationale
+- **Noise types:** Salt & pepper, Gaussian, pixel dropout
+- **Noise levels tested:** 5%, 10%, 20%, 30%, 40%
+- **Run:** `./ej1b/run_tests.sh all`
+- **Full docs:** [`ej1b/README.md`](ej1b/README.md)
