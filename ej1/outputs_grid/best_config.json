@@ -1,0 +1,19 @@
+{
+    "config_id": 65,
+    "arch_name": "wide_24_12",
+    "encoder": "35-24-12-2",
+    "decoder": "2-12-24-35",
+    "optimizer": "momentum",
+    "hidden_act": "tanh",
+    "learning_rate": 0.01,
+    "cv_train_loss_mean": 0.0037879397976044223,
+    "cv_val_loss_mean": 2.5171493166231076,
+    "cv_val_max_pixel_error_mean": 22.5,
+    "cv_val_mean_pixel_error_mean": 13.125,
+    "cv_val_n_ok_1px_mean": 0.0,
+    "full_train_loss": 0.006934509618830413,
+    "full_max_pixel_error": 0,
+    "full_mean_pixel_error": 0.0,
+    "full_n_ok_1px": 32,
+    "success_full_dataset": true
+}

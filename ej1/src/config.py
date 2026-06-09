@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description="Autoencoder Config", add_help=Fals
 parser.add_argument("--encoder", type=str, default="35,16,8,2")
 parser.add_argument("--decoder", type=str, default="2,8,16,35")
 parser.add_argument("--lr", type=float, default=0.01)
-parser.add_argument("--epochs", type=int, default=10000)
+parser.add_argument("--epochs", type=int, default=30000)
 parser.add_argument("--optimizer", type=str, default="adam")
 parser.add_argument("--loss", type=str, default="bce")
 parser.add_argument("--hidden_act", type=str, default="tanh")
