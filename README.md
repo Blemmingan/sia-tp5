@@ -73,3 +73,15 @@ Located in `ej1b/`. Extends the basic autoencoder with denoising capability.
 - **Noise levels tested:** 5%, 10%, 20%, 30%, 40%
 - **Run:** `./ej1b/run_tests.sh all`
 - **Full docs:** [`ej1b/README.md`](ej1b/README.md)
+
+## Exercise 2 — Variational Autoencoder (VAE)
+
+Located in `ej2/`. Extends the basic autoencoder with a variational latent space.
+
+- **Dataset:** 16 handcrafted 7×7 binary emoji patterns (faces, shapes, arrows, symbols)
+- **Architecture:** Encoder → (μ, log σ²) → reparameterize → z → Decoder
+- **Loss:** ELBO = Binary Cross-Entropy + β·KL(N(μ,σ²) ‖ N(0,I))
+- **Latent dim:** 2 (default, for visualization) — configurable to 4 or 8
+- **Generation:** Sample z ~ N(0,I), decode to produce new patterns
+- **Run:** `./ej2/run_tests.sh all`
+- **Full docs:** [`ej2/README.md`](ej2/README.md)

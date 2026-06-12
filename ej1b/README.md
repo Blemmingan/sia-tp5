@@ -59,3 +59,8 @@ The test runner script handles everything including venv creation, training, eva
 
 ## Results
 Run `./ej1b/run_tests.sh all` to populate `outputs/` with plots and the `noise_study.csv` summary.
+
+## See Also
+
+- **ej1a** (root `src/`): Basic autoencoder with 2D latent space on font.h characters
+- **ej2**: Variational Autoencoder (VAE) with generative sampling — [`ej2/README.md`](../ej2/README.md)
